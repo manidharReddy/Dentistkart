@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ForgotPassVC">
+            <connections>
+                <outlet property="dentist_mega_store_lbl" destination="zdh-gR-rsg" id="Cdj-K1-V2X"/>
+                <outlet property="dentistkart_lbl" destination="I3G-1Z-eaA" id="tlR-Ns-bzX"/>
+                <outlet property="forgot_pass_lbl" destination="UX6-Zk-bVz" id="WsL-7p-NhS"/>
+                <outlet property="forgottxtfeild" destination="c4T-Gz-QcP" id="Lb5-SC-8Iw"/>
+                <outlet property="submit_btn" destination="XUt-R0-MUQ" id="Cfq-sI-3il"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DENTIST MEGA STORE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdh-gR-rsg">
+                    <rect key="frame" x="160" y="79" width="157" height="17"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DENTISTKART" textAlignment="right" lineBreakMode="middleTruncation" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="I3G-1Z-eaA">
+                    <rect key="frame" x="0.0" y="42" width="320" height="42"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="adjustsFontSizeToFitWidth" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="username" translatesAutoresizingMaskIntoConstraints="NO" id="hmJ-7u-46C">
+                    <rect key="frame" x="24" y="209" width="36" height="36"/>
+                    <color key="backgroundColor" red="0.85791760500000003" green="0.85668212079999995" blue="0.87826295229999995" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter your Registered Email" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="c4T-Gz-QcP">
+                    <rect key="frame" x="60" y="209" width="244" height="36"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
+                    <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XUt-R0-MUQ">
+                    <rect key="frame" x="24" y="269" width="87" height="30"/>
+                    <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="vYG-PU-yZz"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="Submit">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="forgotSubmit:" destination="-1" eventType="touchUpInside" id="cxO-16-2Kc"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot  Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UX6-Zk-bVz">
+                    <rect key="frame" x="24" y="166" width="296" height="35"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="0.85791760500000003" green="0.85668212079999995" blue="0.87826295229999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.30980392159999998" green="0.76078431369999999" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="UX6-Zk-bVz" firstAttribute="top" secondItem="zdh-gR-rsg" secondAttribute="bottom" constant="70" id="0Ch-ga-Yax"/>
+                <constraint firstAttribute="trailing" secondItem="zdh-gR-rsg" secondAttribute="trailing" constant="3" id="0Fd-yL-tpC"/>
+                <constraint firstItem="c4T-Gz-QcP" firstAttribute="leading" secondItem="hmJ-7u-46C" secondAttribute="trailing" id="3ad-ZK-5D6"/>
+                <constraint firstItem="XUt-R0-MUQ" firstAttribute="leading" secondItem="hmJ-7u-46C" secondAttribute="leading" id="5D7-O6-NAE"/>
+                <constraint firstItem="XUt-R0-MUQ" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="7Ht-vT-HEo"/>
+                <constraint firstItem="UX6-Zk-bVz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="24" id="8EY-4H-avY"/>
+                <constraint firstItem="zdh-gR-rsg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="79" id="Bjn-Qz-EaO"/>
+                <constraint firstItem="I3G-1Z-eaA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="42" id="Fgm-t2-pXl"/>
+                <constraint firstAttribute="trailing" secondItem="c4T-Gz-QcP" secondAttribute="trailing" constant="16" id="IOa-jG-WNq"/>
+                <constraint firstItem="hmJ-7u-46C" firstAttribute="top" secondItem="c4T-Gz-QcP" secondAttribute="top" id="KqQ-x4-pXS"/>
+                <constraint firstItem="XUt-R0-MUQ" firstAttribute="top" secondItem="hmJ-7u-46C" secondAttribute="bottom" constant="24" id="SLv-bY-xyR"/>
+                <constraint firstItem="hmJ-7u-46C" firstAttribute="leading" secondItem="UX6-Zk-bVz" secondAttribute="leading" id="VHv-lc-yGX"/>
+                <constraint firstItem="UX6-Zk-bVz" firstAttribute="trailing" secondItem="I3G-1Z-eaA" secondAttribute="trailing" id="YBu-6v-g4f"/>
+                <constraint firstItem="UX6-Zk-bVz" firstAttribute="top" secondItem="I3G-1Z-eaA" secondAttribute="bottom" constant="82" id="a0D-Zk-h8G"/>
+                <constraint firstItem="c4T-Gz-QcP" firstAttribute="bottom" secondItem="hmJ-7u-46C" secondAttribute="bottom" id="aZH-4u-6tn"/>
+                <constraint firstAttribute="trailing" secondItem="I3G-1Z-eaA" secondAttribute="trailing" id="mWQ-Sf-GQj"/>
+                <constraint firstAttribute="trailing" secondItem="XUt-R0-MUQ" secondAttribute="trailing" constant="209" id="nIy-5z-SZX"/>
+                <constraint firstItem="I3G-1Z-eaA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="snR-Lz-udL"/>
+                <constraint firstItem="hmJ-7u-46C" firstAttribute="top" secondItem="UX6-Zk-bVz" secondAttribute="bottom" constant="8" symbolic="YES" id="w0Y-wv-UAS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="280" y="424"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="username" width="36" height="36"/>
+    </resources>
+</document>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MenuSectionHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="76"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3xP-8k-rFn">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="76"/>
+                    <color key="backgroundColor" red="0.17020491160000001" green="0.75055543700000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Burger" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3yG-mP-Nmt">
+                    <rect key="frame" x="8" y="28" width="52" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1yq-va-h2r">
+                    <rect key="frame" x="560" y="25" width="26" height="26"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="down_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="E6J-2v-Ej4">
+                            <rect key="frame" x="0.0" y="1" width="26" height="26"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="26" id="hwZ-Zw-hZM"/>
+                        <constraint firstAttribute="width" constant="26" id="vYw-FA-HRj"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="1yq-va-h2r" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailingMargin" constant="-6" id="2ET-Tc-6dd"/>
+                <constraint firstAttribute="trailing" secondItem="1yq-va-h2r" secondAttribute="trailing" constant="14" id="9go-zi-jZK"/>
+                <constraint firstItem="1yq-va-h2r" firstAttribute="centerY" secondItem="3yG-mP-Nmt" secondAttribute="centerY" id="fjY-NK-X8q"/>
+                <constraint firstAttribute="bottom" secondItem="3xP-8k-rFn" secondAttribute="bottom" id="oxq-GR-DgL"/>
+                <constraint firstItem="3xP-8k-rFn" firstAttribute="centerY" secondItem="3yG-mP-Nmt" secondAttribute="centerY" id="pbK-85-ACa"/>
+                <constraint firstAttribute="trailing" secondItem="3xP-8k-rFn" secondAttribute="trailing" id="rp6-jb-0bS"/>
+                <constraint firstItem="3xP-8k-rFn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="x8G-zt-0km"/>
+                <constraint firstItem="3xP-8k-rFn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="xc2-p3-gDD"/>
+                <constraint firstItem="3yG-mP-Nmt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="y5S-Bj-kRr"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="drop_down_img" destination="E6J-2v-Ej4" id="Dnk-tK-nnn"/>
+                <outlet property="titleLabel" destination="3yG-mP-Nmt" id="tIC-Rf-e8s"/>
+            </connections>
+            <point key="canvasLocation" x="444" y="295"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="down_arrow" width="36" height="36"/>
+    </resources>
+</document>
