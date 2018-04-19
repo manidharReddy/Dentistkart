@@ -619,7 +619,7 @@
 				ORGANIZATIONNAME = "Google Inc";
 				TargetAttributes = {
 					0043C7991580045B000DF02E = {
-						DevelopmentTeam = VTE566JDHF;
+						DevelopmentTeam = 2LUK926E65;
 					};
 				};
 			};
@@ -820,6 +820,7 @@
 				CLANG_MODULES_AUTOLINK = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 2LUK926E65;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -857,6 +858,7 @@
 				CLANG_MODULES_AUTOLINK = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 2LUK926E65;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
